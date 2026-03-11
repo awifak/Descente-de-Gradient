@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/Users/ayawifak/Desktop/cours_machinelearning/Gradient Python/data.csv', sep=';')
+df = pd.read_csv('data.csv', sep=';')
 df2 = np.array(df['USA'])
 # df2 = df['USA'] -> ne pas faire ça car sinon que des NaN car ça crée des "series" càd liste avec un index
 X = df2[:-1] #prend tout sauf la dernière valeur
